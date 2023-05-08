@@ -1,0 +1,126 @@
+.contenedor-ruleta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* Ajusta el valor del z-index según sea necesario para que el contenedor esté por encima de la ruleta */
+}
+
+
+
+.clima_container{
+  width: 400px; /* Ancho del marco */
+  height: 300px; /* Altura del marco */
+  padding: 5px; /* Espacio interno del marco */
+  margin: 5px; /* Margen externo del marco */
+  overflow: auto; /* Control de desbordamiento */
+  position: relative;
+  top: -120%;
+  left: 40%;
+  display: flex;
+  fill:rgb(50, 38, 8)
+}
+
+
+
+* {
+    background-color: #e5e6d4; /* Cambiar el valor hexadecimnal por el color que desees */
+  }
+#pagename{
+    color:rgb(85, 101, 129)
+}
+.fotos {
+    display: flex; /* Establecer display:flex para que los elementos se ajusten horizontalmente */
+    justify-content: space-between; /* Distribuir los elementos de manera equitativa a lo largo del ancho de la pantalla */
+  }
+  
+.fotos img {
+    width: 100%; /* Establecer el ancho de cada imagen al 100% del ancho de la ventana del navegador */
+  }
+  
+p {
+    margin: 30px; /* Agregar un margen de 20px alrededor del cuerpo de la página */
+    color:rgb(50, 38, 8);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+  
+.circle-menu li {
+    list-style: none;
+    display: inline;
+}
+  
+.circle-menu {
+    position: relative;
+    width: 50em;
+    height: 50em;
+    border: dashed 2px #cccccc;
+    border-radius: 50%;
+    margin: 5em auto 7em;
+}
+.circle-menu a {
+display: block;
+position: absolute;
+top: 50%; 
+left: 50%;
+width: 8em; height: 8em;
+line-height:8em;
+margin: -3.5em;
+-moz-border-radius: 4em;
+-webkit-border-radius: 4em;
+border-radius: 4em;
+text-align: center;
+text-decoration: none;
+color: white;
+background-color: #72c3db;
+box-sizing: border-box;
+}
+
+.circle-menu a.arica:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.tarapaca:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.antofagasta:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.atacama:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.coquimbo:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.valparaiso:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.metropolitana:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.maule:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.nuble:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.biobio:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.araucania:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.rios:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.lagos:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.aysen:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.magallanes:hover {background: #203864;opacity: 0.6;}
+
+.circle-menu a.arica:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.tarapaca:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.antofagasta:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.atacama:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.coquimbo:hover {background: #203864;opacity: 1;}
+.circle-menu a.valparaiso:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.metropolitana:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.ohiggins:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.maule:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.nuble:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.biobio:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.araucania:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.rios:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.lagos:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.aysen:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.magallanes:hover {background: #203864;opacity: 1.0;}
+
+.circle-menu .arica { transform: rotate(22.5deg) translate(25em) rotate(-22.5deg); -webkit-transform: rotate(22.5deg) translate(25em) rotate(-22.5deg); -ms-transform: rotate(22.5deg) translate(25em) rotate(-22.5deg);}
+.circle-menu .tarapaca { transform: rotate(45deg) translate(25em) rotate(-45deg); -webkit-transform: rotate(45deg) translate(25em) rotate(-45deg); -ms-transform: rotate(45deg) translate(25em) rotate(-45deg);}
+.circle-menu .antofagasta { transform: rotate(67.5deg) translate(25em) rotate(-67.5deg); -webkit-transform: rotate(67.5deg) translate(25em) rotate(-67.5deg); -ms-transform: rotate(67.5deg) translate(25em) rotate(-67.5deg);}
+.circle-menu .atacama { transform: rotate(90deg) translate(25em) rotate(-90deg); -webkit-transform: rotate(90deg) translate(25em) rotate(-90deg); -ms-transform: rotate(90deg) translate(25em) rotate(-90deg);}
+.circle-menu .coquimbo { transform: rotate(112.5deg) translate(25em) rotate(-112.5deg); -webkit-transform: rotate(112.5deg) translate(25em) rotate(-112.5deg); -ms-transform: rotate(112.5deg) translate(25em) rotate(-112.5deg);}
+.circle-menu .valparaiso { transform: rotate(135deg) translate(25em) rotate(-135deg); -webkit-transform: rotate(135deg) translate(25em) rotate(-135deg); -ms-transform: rotate(135deg) translate(25em) rotate(-135deg);}
+.circle-menu .metropolitana { transform: rotate(157.5deg) translate(25em) rotate(-157.5deg); -webkit-transform: rotate(157.5deg) translate(25em) rotate(-157.5deg); -ms-transform: rotate(157.5deg) translate(25em) rotate(-157.5deg);}
+.circle-menu .ohiggins { transform: rotate(180deg) translate(25em) rotate(-180deg); -webkit-transform: rotate(180deg) translate(25em) rotate(-180deg); -ms-transform: rotate(180deg) translate(25em) rotate(-180deg);}
+.circle-menu .maule { transform: rotate(202.5deg) translate(25em) rotate(-202.5deg); -webkit-transform: rotate(202.5deg) translate(25em) rotate(-202.5deg); -ms-transform: rotate(202.5deg) translate(25em) rotate(-202.5deg);}
+.circle-menu .nuble { transform: rotate(225deg) translate(25em) rotate(-225deg); -webkit-transform: rotate(225deg) translate(25em) rotate(-225deg); -ms-transform: rotate(225deg) translate(25em) rotate(-225deg);}
+.circle-menu .biobio { transform: rotate(247.5deg) translate(25em) rotate(-247.5deg); -webkit-transform: rotate(247.5deg) translate(25em) rotate(-247.5deg); -ms-transform: rotate(247.5deg) translate(25em) rotate(-247.5deg);}
+.circle-menu .araucania { transform: rotate(270deg) translate(25em) rotate(-270deg); -webkit-transform: rotate(270deg) translate(25em) rotate(-270deg); -ms-transform: rotate(270deg) translate(25em) rotate(-270deg);}
+.circle-menu .rios { transform: rotate(292.5deg) translate(25em) rotate(-292.5deg); -webkit-transform: rotate(292.5deg) translate(25em) rotate(-292.5deg); -ms-transform: rotate(292.5deg) translate(25em) rotate(-292.5deg);}
+.circle-menu .lagos { transform: rotate(315deg) translate(25em) rotate(-315deg); -webkit-transform: rotate(315deg) translate(25em) rotate(-315deg); -ms-transform: rotate(315deg) translate(25em) rotate(-315deg);}
+.circle-menu .aysen { transform: rotate(337.5deg) translate(25em) rotate(-337.5deg); -webkit-transform: rotate(337.5deg) translate(25em) rotate(-337.5deg); -ms-transform: rotate(337.5deg) translate(25em) rotate(-337.5deg);}
+.circle-menu .magallanes { transform: rotate(360deg) translate(25em) rotate(-360deg); -webkit-transform: rotate(360deg) translate(25em) rotate(-360deg); -ms-transform: rotate(360deg) translate(25em) rotate(-360deg);}
