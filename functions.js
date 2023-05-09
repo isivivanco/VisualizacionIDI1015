@@ -1,5 +1,24 @@
-$(function() {
+$(document).ready(function() {
+
     $("#enero").click(function() {
+        const precio_atacama = 31624;
+        const precio_tarapaca = 43398;
+        const precio_Antofagasta=64515;
+        const precio_Atacama= 35417;
+        const precio_Coquimbo = 49449;
+        const precio_Valparaiso = 74751;
+        const precio_Santiago=63815;
+        const precio_ohiggins= 44126;
+        const precio_Maule= 42144;
+        const precio_nuble = 45526;
+        const precio_BioBio=39648;
+        const precio_Araucania= 58673;
+        const precio_losrios = 55554;
+        const precio_loslagos = 56379;
+        const precio_Aysen=49022;
+        const precio_Magallanes=153548;
+        
+        
         $("#1").mouseover(function(){
             $("#clima").text("T° min y max: 18.7 - 24.6 // viento promedio: 6 nudos // precipitaciones mensuales: 0.6 milimetros // humedad relativa: 68% // nubosidad promedio: poco nuboso (3/8)")
         });

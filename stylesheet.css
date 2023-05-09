@@ -1,8 +1,25 @@
+
+
+contenedor-chile {
+  position: absolute;
+  right: 50px;
+  top: 50px; /* Ajusta la altura deseada */
+}
+
+.contenedor-chile .chile {
+  position: relative;
+  top: -1000;
+  right: -1200;
+  height:300px;
+  width:150px;
+}
+
 .contenedor-ruleta {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  scale:1;
   z-index: 999; /* Ajusta el valor del z-index según sea necesario para que el contenedor esté por encima de la ruleta */
 }
 
@@ -22,89 +39,12 @@
 }
 
 
-
 * {
-    background-color: #41658a; /* Cambiar el valor hexadecimnal por el color que desees */
+    background-color: #e5e6d4; /* Cambiar el valor hexadecimnal por el color que desees */
   }
 #pagename{
-    color: #ffffff;(85, 101, 129);
+    color:rgb(85, 101, 129)
 }
-
-
-
-
-
-.gallery {
-  --s: 30px; /* control the zig-zag size */
-  
-  display: grid;
-  height: 350px;
-  gap: 8px;
-  grid-auto-flow: column;
-  place-items: center;
-}
-.gallery > img {
-  width: 0;
-  min-width: calc(100% + var(--s));
-  height: 0;
-  min-height: 100%;
-  object-fit: cover;
-  --mask: 
-    conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 
-      100% calc(50% + var(--_p,0%))/51% calc(2*var(--s)) repeat-y,
-    conic-gradient(from   45deg at left ,#0000,#000 1deg 89deg,#0000 90deg) 
-        0% calc(50% + var(--_p,0%))/51% calc(2*var(--s)) repeat-y;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-  cursor: pointer;
-  transition: .5s;
-
-
-}
-.gallery > img:nth-child(odd) {
-  --_p: var(--s);
-}
-.gallery > img:hover {
-  width: 15vw; 
-}
-.gallery > img:first-child {
-  min-width: calc(100% + var(--s)/2);
-  place-self: start;
-  --mask: 
-    conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 
-      0 calc(50% + var(--_p,0%))/100% calc(2*var(--s));
-}
-.gallery > img:last-child {
-  min-width: calc(100% + var(--s)/2);
-  place-self: end;
-  --mask: 
-    conic-gradient(from   45deg at left ,#0000,#000 1deg 89deg,#0000 90deg) 
-       0 calc(50% + var(--_p,0%)) /100% calc(2*var(--s));
-}
-
-.header {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  align-content: center;
-  background: #41658a;
-}
-
-ul {
-  display:flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-
-li {
-  text-decoration: none;
-  font-size: 12px;
-  color:#ffffff;
-  background-color: #4c3957;
-  border-radius: 10px;
-  padding: 10px;
-  }  
-
 .fotos {
     display: flex; /* Establecer display:flex para que los elementos se ajusten horizontalmente */
     justify-content: space-between; /* Distribuir los elementos de manera equitativa a lo largo del ancho de la pantalla */
@@ -114,64 +54,16 @@ li {
     width: 100%; /* Establecer el ancho de cada imagen al 100% del ancho de la ventana del navegador */
   }
   
-  
 p {
     margin: 30px; /* Agregar un margen de 20px alrededor del cuerpo de la página */
-    color:#ffffff(85, 101, 129);
-    font-family:29LT Azer, Geneva, Tahoma, sans-serif
+    color:rgb(50, 38, 8);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-
-#parrafos{
-    color: #ffffff;(85, 101, 129)
-}
-button {
-  --c: #fff; /* text color */
   
-  background: 
-    linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-    #4c3957; /* background color */
-  color: #0000;
-  border: none;
-  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
-  text-shadow: 
-    calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
-    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
-  outline-offset: .1em;
-  transition: 0.3s;
-}
-button:hover,
-button:focus-visible {
-  --_p: 0%;
-  --_i: 1;
-}
-button:active {
-  text-shadow: none;
-  color: var(--c);
-  box-shadow: inset 0 0 9e9q #0005;
-  transition: 0s;
-}
-
-body {
-  margin: 0;
-  min-height: 50vh;
-  display: grid;
-  place-content: center;
-  background: #41658a;
-}
-button {
-  font-family: 29LT Azer, Geneva, Tahoma, sans-serif;
-  font-weight:bold;
-  font-size: 1.8rem;
-  margin: 0;
-  cursor: pointer;
-  padding: .1em .3em;
-}
-
-
-
 .circle-menu li {
     list-style: none;
     display: inline;
+    
 }
   
 .circle-menu {
@@ -181,6 +73,9 @@ button {
     border: dashed 2px #cccccc;
     border-radius: 50%;
     margin: 5em auto 7em;
+    scale:0.75;
+    top:-10%;
+    right:0%;
 }
 .circle-menu a {
 display: block;
@@ -196,7 +91,7 @@ border-radius: 4em;
 text-align: center;
 text-decoration: none;
 color: white;
-background-color: #4c3957;
+background-color: #72c3db;
 box-sizing: border-box;
 }
 
@@ -278,3 +173,94 @@ box-sizing: border-box;
 .circle-menu .lagos { transform: rotate(315deg) translate(25em) rotate(-315deg); -webkit-transform: rotate(315deg) translate(25em) rotate(-315deg); -ms-transform: rotate(315deg) translate(25em) rotate(-315deg);}
 .circle-menu .aysen { transform: rotate(337.5deg) translate(25em) rotate(-337.5deg); -webkit-transform: rotate(337.5deg) translate(25em) rotate(-337.5deg); -ms-transform: rotate(337.5deg) translate(25em) rotate(-337.5deg);}
 .circle-menu .magallanes { transform: rotate(360deg) translate(25em) rotate(-360deg); -webkit-transform: rotate(360deg) translate(25em) rotate(-360deg); -ms-transform: rotate(360deg) translate(25em) rotate(-360deg);}
+
+.circle-menu-2 li {
+  list-style: none;
+  display: inline;
+  
+}
+
+.circle-menu-2{
+  position: relative;
+  width: 50em;
+  height: 50em;
+  border: dashed 2px #cccccc;
+  border-radius: 50%;
+  margin: 5em auto 7em;
+  scale:0.75;
+  top:-10%;
+  right:0%;
+}
+.circle-menu-2 a {
+display: block;
+position: absolute;
+top: 50%; 
+left: 50%;
+width: 8em; height: 8em;
+line-height:8em;
+margin: -3.5em;
+-moz-border-radius: 4em;
+-webkit-border-radius: 4em;
+border-radius: 4em;
+text-align: center;
+text-decoration: none;
+color: white;
+background-color: #72c3db;
+box-sizing: border-box;
+}
+
+
+.circle-menu a.actividad_1:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_2:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_3:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_4:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_5:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_6:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_7:hover {background: #203864;opacity: 0.6;}
+.circle-menu a.actividad_8:hover {background: #203864;opacity: 0.6;}
+
+
+.circle-menu a.actividad_1:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.actividad_2:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.actividad_3:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.actividad_4:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.actividad_5:hover {background: #203864;opacity: 1;}
+.circle-menu a.actividad_6:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.actividad_7:hover {background: #203864;opacity: 1.0;}
+.circle-menu a.actividad_8:hover {background: #203864;opacity: 1.0;}
+/*
+.circle-menu a.spiritual {background:#009cde;opacity: 0.6;}
+.circle-menu a.occupational {background:#3a913f;opacity: 0.6;}
+.circle-menu a.emotional {background:#fecd06;opacity: 0.6;}
+.circle-menu a.environmental {background:#fa7f00;opacity: 0.6;}
+.circle-menu a.intellectual {background:#ed2124;opacity: 0.6;}
+.circle-menu a.social {background:#932683;opacity: 0.6;}
+.circle-menu a.physical {background:#203864;opacity: 0.6;}
+
+.circle-menu a.spiritual:hover {background:#009cde;opacity: 1.0;}
+.circle-menu a.occupational:hover {background:#3a913f;opacity: 1.0;}
+.circle-menu a.emotional:hover {background:#fecd06;opacity: 1.0;}
+.circle-menu a.environmental:hover {background:#fa7f00;opacity: 1.0;}
+.circle-menu a.intellectual:hover {background:#ed2124;opacity: 1.0;}
+.circle-menu a.social:hover {background:#932683;opacity: 1.0;}
+.circle-menu a.physical:hover {background:#203864;opacity: 1.0;}
+*/
+
+/* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 12em translate is half the container */
+/*
+.circle-menu .spiritual { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu .occupational { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu .emotional { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu .environmental { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu .intellectual { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255deg);}
+.circle-menu .social { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
+.circle-menu .physical { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
+*/
+.circle-menu .actividad_1 { transform: rotate(22.5deg) translate(25em) rotate(-22.5deg); -webkit-transform: rotate(22.5deg) translate(25em) rotate(-22.5deg); -ms-transform: rotate(22.5deg) translate(25em) rotate(-22.5deg);}
+.circle-menu .actividad_2 { transform: rotate(45deg) translate(25em) rotate(-45deg); -webkit-transform: rotate(45deg) translate(25em) rotate(-45deg); -ms-transform: rotate(45deg) translate(25em) rotate(-45deg);}
+.circle-menu .actividad_3 { transform: rotate(67.5deg) translate(25em) rotate(-67.5deg); -webkit-transform: rotate(67.5deg) translate(25em) rotate(-67.5deg); -ms-transform: rotate(67.5deg) translate(25em) rotate(-67.5deg);}
+.circle-menu .actividad_4 { transform: rotate(90deg) translate(25em) rotate(-90deg); -webkit-transform: rotate(90deg) translate(25em) rotate(-90deg); -ms-transform: rotate(90deg) translate(25em) rotate(-90deg);}
+.circle-menu .actividad_5 { transform: rotate(112.5deg) translate(25em) rotate(-112.5deg); -webkit-transform: rotate(112.5deg) translate(25em) rotate(-112.5deg); -ms-transform: rotate(112.5deg) translate(25em) rotate(-112.5deg);}
+.circle-menu .actividad_6 { transform: rotate(135deg) translate(25em) rotate(-135deg); -webkit-transform: rotate(135deg) translate(25em) rotate(-135deg); -ms-transform: rotate(135deg) translate(25em) rotate(-135deg);}
+.circle-menu .actividad_7 { transform: rotate(157.5deg) translate(25em) rotate(-157.5deg); -webkit-transform: rotate(157.5deg) translate(25em) rotate(-157.5deg); -ms-transform: rotate(157.5deg) translate(25em) rotate(-157.5deg);}
+.circle-menu .actividad_8 { transform: rotate(180deg) translate(25em) rotate(-180deg); -webkit-transform: rotate(180deg) translate(25em) rotate(-180deg); -ms-transform: rotate(180deg) translate(25em) rotate(-180deg);}
